@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Pic1 from "../../../public/images/1.jpg";
 import Pic2 from "../../../public/images/2.jpg";
 import Pic3 from "../../../public/images/3.jpeg";
@@ -67,13 +67,7 @@ const page = () => {
                 className="w-full h-full absolute top-0 flex justify-center items-center element"
               >
                 <div className="w-[25vw] h-[25vh] relative imagecontainer">
-                  <Image
-                    src={src}
-                    fill
-                    placeholder="blur"
-                    objectFit="cover"
-                    alt="/"
-                  />
+                  <Image src={src} fill placeholder="blur" alt="/" />
                 </div>
               </motion.div>
             );
