@@ -4,14 +4,6 @@ import Lenis from "@studio-freight/lenis";
 import Link from "next/link";
 
 const page = () => {
-  const lenis = new Lenis();
-
-  function raf(time: any) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
   return (
     <div className="w-full h-[100vh]">
       <div className="flex justify-center items-center mt-[40vh] flex-wrap gap-9">
