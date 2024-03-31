@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Pic1 from "../../../public/images/1.jpg";
 import Pic2 from "../../../public/images/2.jpg";
 import Pic3 from "../../../public/images/3.jpeg";
@@ -80,7 +80,6 @@ const page = () => {
           })}
         </div>
       </div>
-      <div className="h-[100vh]"></div>
     </div>
   );
 };
