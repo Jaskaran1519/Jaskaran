@@ -6,10 +6,6 @@ import Link from "next/link";
 const page = () => {
   const lenis = new Lenis();
 
-  lenis.on("scroll", (e: any) => {
-    console.log(e);
-  });
-
   function raf(time: any) {
     lenis.raf(time);
     requestAnimationFrame(raf);
@@ -18,7 +14,7 @@ const page = () => {
   requestAnimationFrame(raf);
   return (
     <div className="w-full h-[100vh]">
-      <div className="flex justify-center items-center mt-[40vh] gap-9">
+      <div className="flex justify-center items-center mt-[40vh] flex-wrap gap-9">
         <h1 className="text-[2rem]">
           Click hee for moj masti &#128166; &#128166; &#128166;
         </h1>
