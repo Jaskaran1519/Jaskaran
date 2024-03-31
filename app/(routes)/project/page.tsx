@@ -67,13 +67,20 @@ const page = () => {
                 className="w-full h-full absolute top-0 flex justify-center items-center element"
               >
                 <div className="w-[25vw] h-[25vh] relative imagecontainer">
-                  <Image src={src} fill placeholder="blur" alt="/" />
+                  <Image
+                    src={src}
+                    fill
+                    placeholder="blur"
+                    objectFit="cover"
+                    alt="/"
+                  />
                 </div>
               </motion.div>
             );
           })}
         </div>
       </div>
+      <div className="h-[100vh]"></div>
     </div>
   );
 };
