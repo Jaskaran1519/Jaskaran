@@ -11,7 +11,7 @@ const photos = [
   "5.webp",
   "6.webp",
   "7.webp",
-  "8.webp",
+  "12.webp",
   "9.webp",
   "10.webp",
   "11.webp",
