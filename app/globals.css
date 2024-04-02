@@ -52,3 +52,18 @@
     }
   }
 }
+
+.column {
+  &:nth-child(1) {
+    top: -45%;
+  }
+  &:nth-child(2) {
+    top: -90%;
+  }
+  &:nth-child(3) {
+    top: -70%;
+  }
+  &:nth-child(4) {
+    top: -130%;
+  }
+}
