@@ -27,7 +27,7 @@ const Animation = () => {
 
   const y: any = useTransform(scrollYProgress, [0, 1], [0, height * 1.2]);
   const y2: any = useTransform(scrollYProgress, [0, 1], [0, height * 3.2]);
-  const y3: any = useTransform(scrollYProgress, [0, 1], [0, height * 2.5]);
+  const y3: any = useTransform(scrollYProgress, [0, 1], [0, height * 1]);
   const y4: any = useTransform(scrollYProgress, [0, 1], [0, height * 4]);
   return (
     <div className="">
@@ -39,7 +39,6 @@ const Animation = () => {
         <Column photos={[photos[0], photos[1], photos[2]]} y={y} />
         <Column photos={[photos[3], photos[4], photos[5]]} y={y2} />
         <Column photos={[photos[6], photos[7], photos[8]]} y={y3} />
-        <Column photos={[photos[9], photos[10], photos[11]]} y={y4} />
       </div>
       <div className="h-[100vh]"></div>
     </div>
@@ -52,7 +51,7 @@ const Column = ({ photos, y }: { photos: string[]; y: any }) => {
   return (
     <motion.div
       style={{ y }}
-      className="w-[25%] h-full flex flex-col gap-[1vw] relative column "
+      className="w-[33%] h-full flex flex-col gap-[1vw] relative column "
     >
       {photos.map((src, index) => {
         return (
