@@ -67,11 +67,11 @@ export default function Index() {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="w-full h-full flex justify-center items-center fixed z-99 bg-[#141516]"
+      className="w-full h-full flex justify-center items-center fixed z-1 bg-[#141516]"
     >
       {dimension.width > 0 && (
         <>
-          <svg className="absolute top-0 w-full h-[130vh] z-1 ">
+          <svg className="absolute top-0 w-full h-[130vh] z-99 ">
             <motion.path
               variants={curve}
               initial="initial"

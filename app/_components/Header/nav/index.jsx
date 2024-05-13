@@ -38,6 +38,7 @@ export default function index() {
       exit="exit"
       className={styles.menu}
     >
+      <Curve />
       <div className={styles.body}>
         <div
           onMouseLeave={() => {
@@ -61,7 +62,6 @@ export default function index() {
         </div>
         <Footer />
       </div>
-      <Curve />
     </motion.div>
   );
 }

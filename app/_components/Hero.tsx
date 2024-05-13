@@ -22,7 +22,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto h-auto  ">
+    <div className="w-[90%] mx-auto h-auto overflow-hidden ">
       <div className="w-full h-[10vh] flex justify-between">
         <div className="w-[60vw] hidden md:flex justify-between text-[#323031] font-semibold text-[1.5]">
           <motion.h1

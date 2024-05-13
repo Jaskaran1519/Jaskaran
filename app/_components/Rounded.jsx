@@ -5,7 +5,7 @@ import Jiggle from "./Jiggle";
 
 export default function index({
   children,
-  backgroundColor = "#455CE9",
+  backgroundColor = "#018E42",
   ...attributes
 }) {
   const circle = useRef(null);
@@ -51,7 +51,11 @@ export default function index({
         {...attributes}
       >
         {children}
-        <div ref={circle} style={{ backgroundColor }} className=""></div>
+        <div
+          ref={circle}
+          style={{ backgroundColor }}
+          className="w-full h-[150%] absolute rounded-full top-[100%]"
+        ></div>
       </div>
     </Jiggle>
   );
