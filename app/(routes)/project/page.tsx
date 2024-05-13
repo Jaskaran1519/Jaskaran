@@ -30,7 +30,7 @@ const page = () => {
     },
     {
       src: Pic2,
-      scale: scale6,
+      scale: scale8,
     },
     {
       src: Pic3,
@@ -38,7 +38,7 @@ const page = () => {
     },
     {
       src: Pic4,
-      scale: scale5,
+      scale: scale6,
     },
     {
       src: Pic5,
@@ -56,7 +56,7 @@ const page = () => {
 
   return (
     <div>
-      <div className="h-[50vh] bg-gray-600"></div>
+      <div className="h-[50vh] bg-black"></div>
       <div ref={container} className="h-[300vh] relative ">
         <div className="sticky top-0 h-[100vh] bg-black overflow-hidden">
           {picture.map(({ src, scale }, index) => {

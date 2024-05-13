@@ -1,9 +1,16 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import Animation from "./_components/Animation";
-
+import Hero from "./_components/Hero";
+import Skills from "./_components/Skills";
+import Footer from "./_components/Footer";
+import Preloader from "./_components/Preloader";
+import Description from "./_components/Description";
 const page = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -13,12 +20,24 @@ const page = () => {
     }
 
     requestAnimationFrame(raf);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      document.body.style.cursor = "default";
+      window.scrollTo(0, 0);
+    }, 2000);
   });
+
   return (
-    <div className="bg-gray-200 backdrop-blur-md w-full min-h-screen">
-      <div>
-        <Animation />
-      </div>
+    <div className="  w-full min-h-screen bg-gray-300 ">
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
+      <Hero />
+      <Description />
+      <Skills />
+      <Animation />
+      <Footer />
     </div>
   );
 };

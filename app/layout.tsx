@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Rubik_Scribble } from "next/font/google";
+import Header from "./_components/Header";
+import { Fjalla_One, News_Cycle, Poiret_One } from "next/font/google";
 import "./globals.css";
 
-const rubik = Rubik_Scribble({ subsets: ["latin"], weight: ["400"] });
+const rubik = News_Cycle({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={rubik.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

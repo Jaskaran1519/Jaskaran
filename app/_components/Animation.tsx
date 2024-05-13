@@ -40,7 +40,6 @@ const Animation = () => {
         <Column photos={[photos[3], photos[4], photos[5]]} y={y2} />
         <Column photos={[photos[6], photos[7], photos[8]]} y={y3} />
       </div>
-      <div className="h-[100vh]"></div>
     </div>
   );
 };
