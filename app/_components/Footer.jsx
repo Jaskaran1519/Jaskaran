@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Jiggle from "./Jiggle";
+import Rounded from "./Rounded";
 
 const Footer = () => {
   return (
@@ -27,8 +28,9 @@ const Footer = () => {
               <Jiggle>jaskaran1519@gmail.com</Jiggle>
             </button>
           </Jiggle>
+
           <Jiggle>
-            <button className="bg-[#19191c] text-white border-[1px] border-[#5c5c66] px-[2rem] py-[1rem] rounded-full overflow-hidden">
+            <button className="bg-[#19191c] text-white border-[1px] border-[#5c5c66] px-[2rem] py-[1rem] rounded-full overflow-hidden flex justify-center items-center">
               <Jiggle>+91 6284607938</Jiggle>
             </button>
           </Jiggle>

@@ -23,56 +23,6 @@ const Hero = () => {
 
   return (
     <div className="w-[90%] mx-auto h-auto overflow-hidden ">
-      <div className="w-full h-[10vh] flex justify-between">
-        <div className="w-[60vw] hidden md:flex justify-between text-[#323031] font-semibold text-[1.5]">
-          <motion.h1
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.25, delay: 2.5 }}
-            className="flex justify-center items-center"
-          >
-            Jaskaran Singh
-          </motion.h1>
-          <motion.h1
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 2.5 }}
-            className="flex justify-center items-center"
-          >
-            Based in Chandigarh
-          </motion.h1>
-          <motion.h1
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, delay: 2.5 }}
-            className="flex justify-center items-center"
-          >
-            Modern Website Designer
-          </motion.h1>
-        </div>
-        <div className=" flex justify-center items-center gap-10 text-[2rem] text-[#323031]  mt-4">
-          <motion.button
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 2.5 }}
-            className=" "
-          >
-            <Jiggle>
-              <Link href="/project">Projects</Link>
-            </Jiggle>
-          </motion.button>
-
-          <motion.button
-            initial={{ x: 500 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 2.5 }}
-            className=""
-            onClick={handleDownload}
-          >
-            <Jiggle>Resume</Jiggle>
-          </motion.button>
-        </div>
-      </div>
       <div className=" mt-28  ">
         <div className="lg:text-[6rem] xl:text-[8rem] text-[4rem] text-[#323031] font-extrabold flex flex-wrap  leading-tight overflow-hidden mb-5">
           {"Creative Web Developer".split("").map((item, index) => (
