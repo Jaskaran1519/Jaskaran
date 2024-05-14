@@ -5,7 +5,7 @@ import Jiggle from "./Jiggle";
 
 export default function index({
   children,
-  backgroundColor = "#018E42",
+  backgroundColor = "#15616D",
   ...attributes
 }) {
   const circle = useRef(null);
