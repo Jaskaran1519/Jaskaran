@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Jiggle from "./Jiggle";
 import Rounded from "./Rounded";
+import Contactbox from "./ui/Contactbox";
 
 const Footer = () => {
   return (
@@ -23,17 +24,22 @@ const Footer = () => {
         </div>
         <hr className=" mt-16 text-gray-900" />
         <div className="mt-10 flex flex-wrap gap-10 text-[1.5rem]">
-          <Jiggle>
+          <Rounded>
             <button className="bg-[#19191c] text-white border-[1px] border-[#5c5c66] px-[2rem] py-[1rem] rounded-full overflow-hidden">
-              <Jiggle>jaskaran1519@gmail.com</Jiggle>
+              <Jiggle>
+                <p className="z-10 relative">jaskaran1519@gmail.com</p>
+              </Jiggle>
             </button>
-          </Jiggle>
+          </Rounded>
 
-          <Jiggle>
+          <Rounded>
             <button className="bg-[#19191c] text-white border-[1px] border-[#5c5c66] px-[2rem] py-[1rem] rounded-full overflow-hidden flex justify-center items-center">
-              <Jiggle>+91 6284607938</Jiggle>
+              <Jiggle>
+                <p className="z-10 relative">+91 6284607938</p>
+              </Jiggle>
             </button>
-          </Jiggle>
+          </Rounded>
+          <Contactbox />
         </div>
       </div>
     </div>

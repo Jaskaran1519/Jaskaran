@@ -5,7 +5,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export default function DockDemo() {
   return (
-    <div className="relative flex h-auto w-full max-w-[32rem] flex-col items-center justify-center overflow-hidden rounded-lg  bg-gray-300 ">
+    <div className="relative flex h-auto w-full max-w-[20rem] flex-col items-center justify-center overflow-hidden rounded-lg  bg-transparent ">
       <Dock>
         <DockIcon>
           <Icons.gitHub className="h-6 w-6" />

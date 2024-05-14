@@ -29,9 +29,9 @@ const projects = [
   },
   {
     title: "Eazweb",
-    src: "footer.jpg",
+    src: "eazweb.png",
     color: "#706D63",
-    link: "https://www.google.com",
+    link: "https://eazweb2.vercel.app/",
   },
 ];
 
@@ -130,7 +130,11 @@ export default function Home() {
           );
         })}
       </div>
-      <Rounded>
+      <Rounded
+        onClick={() => {
+          router.push("/project");
+        }}
+      >
         <p className="text-[1.5rem] border-[2px] border-[#323031] px-7 py-2 rounded-full overflow-hidden z-10">
           More work
         </p>
@@ -155,7 +159,12 @@ export default function Home() {
                   style={{ backgroundColor: color }}
                   key={`modal_${index}`}
                 >
-                  <Image src={`/${src}`} width={300} height={0} alt="image" />
+                  <Image
+                    src={`/projects/${src}`}
+                    width={300}
+                    height={0}
+                    alt="image"
+                  />
                 </div>
               );
             })}
