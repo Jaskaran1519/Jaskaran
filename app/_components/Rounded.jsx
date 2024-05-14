@@ -40,7 +40,7 @@ export default function index({
   return (
     <Jiggle>
       <div
-        className="roundedButton"
+        className=" relative flex items-center justify-center cursor-pointer rounded-full"
         style={{ overflow: "hidden" }}
         onMouseEnter={() => {
           manageMouseEnter();

@@ -2,8 +2,8 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="w-full md:w-[80%] h-auto">
-      <div></div>
+    <div className="w-[80%] md:w-[70%] mx-auto h-auto mt-28">
+      <h1>Skills</h1>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import Skills from "./_components/Skills";
 import Footer from "./_components/Footer";
 import Preloader from "./_components/Preloader";
 import Description from "./_components/Description";
+import Projects from "./_components/Projects";
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -36,6 +37,7 @@ const page = () => {
       <Hero />
       <Description />
       <Skills />
+      <Projects />
       <Animation />
       <Footer />
     </div>
