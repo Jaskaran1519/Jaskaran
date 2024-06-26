@@ -1,10 +1,9 @@
 import React from "react";
+import Skillpattern from "./ui/Skillpattern";
 
 const Skills = () => {
   return (
-    <div className="w-[80%] md:w-[70%] mx-auto h-auto mt-28">
-      <h1>Skills</h1>
-    </div>
+    <div className="w-full md:w-[70%] mx-auto flex justify-center items-center h-auto mt-15"></div>
   );
 };
 

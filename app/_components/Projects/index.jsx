@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Locomotive",
-    src: "herobg.jpg",
+    src: "vercel.svg",
     color: "#EFE8D3",
     link: "https://www.apple.com",
   },

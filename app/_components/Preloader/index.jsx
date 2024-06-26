@@ -67,7 +67,7 @@ export default function Index() {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="w-full h-full flex justify-center items-center fixed z-1 bg-[#141516]"
+      className="w-full h-full flex justify-center items-center fixed z-10 bg-[#141516]"
     >
       {dimension.width > 0 && (
         <>

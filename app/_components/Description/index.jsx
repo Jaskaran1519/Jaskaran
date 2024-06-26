@@ -10,6 +10,18 @@ export default function index() {
     "Self taught and motivated Web developer.  Have experience as a freelancer.  Have hands-on experience on modern technologies";
   const description = useRef(null);
   const isInView = useInView(description);
+  const handleDownload = () => {
+    // Code to trigger download
+    const fileUrl = "/download/bca syllabus(5).pdf"; // Replace with the actual URL of your file
+    const fileName = "example-file.txt"; // Replace with the desired file name
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div
       ref={description}
@@ -50,7 +62,10 @@ export default function index() {
             <p className="z-10 relative">Projects</p>
           </Rounded>
         </Link>
-        <Rounded className="text-[1.5rem] relative  border-[#323031] border-[2px] rounded-full font-semibold py-2 px-8 flex justify-center items-center">
+        <Rounded
+          onClick={handleDownload}
+          className="text-[1.5rem] relative  border-[#323031] border-[2px] rounded-full font-semibold py-2 px-8 flex justify-center items-center"
+        >
           <p className="z-10 relative">Resume</p>
         </Rounded>
       </div>

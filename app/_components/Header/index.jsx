@@ -7,7 +7,6 @@ import Nav from "./nav";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "../Rounded";
-import Jiggle from "../Jiggle";
 
 export default function index() {
   const header = useRef(null);

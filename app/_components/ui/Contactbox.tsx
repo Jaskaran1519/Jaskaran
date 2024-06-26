@@ -8,19 +8,29 @@ export default function DockDemo() {
     <div className="relative flex h-auto w-full max-w-[20rem] flex-col items-center justify-center overflow-hidden rounded-lg  bg-transparent ">
       <Dock>
         <DockIcon>
-          <Icons.gitHub className="h-6 w-6" />
+          <a href="">
+            <Icons.gitHub className="h-6 w-6" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.X className="h-6 w-6" />
+          <a href="">
+            <Icons.X className="h-6 w-6" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.gmail className="h-6 w-6" />
+          <a href="mailto:jaskaran1519@gmail.com">
+            <Icons.gmail className="h-6 w-6" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.linkedin className="h-6 w-6" />
+          <a href="">
+            <Icons.linkedin className="h-6 w-6" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.whatsapp className="h-8 w-8" />
+          <a href="https://wa.me/+916284607938">
+            <Icons.whatsapp className="h-8 w-8" />
+          </a>
         </DockIcon>
       </Dock>
     </div>

@@ -8,18 +8,6 @@ import Jiggle from "./Jiggle";
 const Hero = () => {
   const [project, setProject] = useState(false);
   const [resume, setResume] = useState(false);
-  const handleDownload = () => {
-    // Code to trigger download
-    const fileUrl = "/download/bca syllabus(5).pdf"; // Replace with the actual URL of your file
-    const fileName = "example-file.txt"; // Replace with the desired file name
-
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <div className="w-[90%] mx-auto h-auto overflow-hidden ">
