@@ -118,7 +118,7 @@ const ProjectsShowcase: React.FC = () => {
         <br key="2" />,
         "Clerk",
       ],
-      img: "/images/1.jpg",
+      img: "/projects/sharelit.webp",
       link: "https://sharelit.vercel.app/",
     },
     {
@@ -130,7 +130,7 @@ const ProjectsShowcase: React.FC = () => {
         <br key="2" />,
         "Prisma",
       ],
-      img: "/images/5.jpg",
+      img: "/projects/felina.webp",
       link: "https://felina-gilt.vercel.app/",
     },
     {
