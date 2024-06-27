@@ -10,14 +10,14 @@ import { useRouter } from "next/navigation";
 
 const projects = [
   {
-    title: "Sherrr",
-    src: "next.svg",
-    color: "#000000",
+    title: "Sharelit",
+    src: "sharelit.webp",
+    color: "#daf0ee",
     link: "https://www.youtube.com",
   },
   {
     title: "Felina",
-    src: "owl.png",
+    src: "felina.webp",
     color: "#8C8C8C",
     link: "https://www.microsoft.com",
   },

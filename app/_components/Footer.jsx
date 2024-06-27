@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React from "react";
 import Jiggle from "./Jiggle";
 import Rounded from "./Rounded";
 import Contactbox from "./ui/Contactbox";

@@ -93,7 +93,7 @@ const Project: React.FC<ProjectProps> = ({
           src={img}
           width={800}
           height={800}
-          className="opacity-60"
+          className="opacity-80"
           alt={title}
         />
       </motion.div>
