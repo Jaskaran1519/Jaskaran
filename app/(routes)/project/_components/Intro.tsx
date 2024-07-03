@@ -1,12 +1,12 @@
 "use client";
 import React, { useRef } from "react";
-import Pic1 from "../../../../public/images/1.jpg";
-import Pic2 from "../../../../public/images/2.jpg";
-import Pic3 from "../../../../public/images/3.jpeg";
-import Pic4 from "../../../../public/images/4.jpg";
-import Pic5 from "../../../../public/images/5.jpg";
-import Pic6 from "../../../../public/images/6.jpg";
-import Pic7 from "../../../../public/images/7.jpg";
+import Pic1 from "../../../../public/images/1.webp";
+import Pic2 from "../../../../public/images/2.webp";
+import Pic3 from "../../../../public/images/3.webp";
+import Pic4 from "../../../../public/images/4.webp";
+import Pic5 from "../../../../public/images/5.webp";
+import Pic6 from "../../../../public/images/6.webp";
+import Pic7 from "../../../../public/images/7b.webp";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 

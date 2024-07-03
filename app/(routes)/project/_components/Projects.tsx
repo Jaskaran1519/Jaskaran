@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Comfortaa, Pacifico } from "next/font/google";
 import Image from "next/image";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import LinearGradient from "../../../_components/magicui/linear-gradient";
 
 const pacifico = Pacifico({
   subsets: ["latin"],
@@ -62,7 +63,7 @@ const Project: React.FC<ProjectProps> = ({
         style={{ opacity: textOpacity }}
         className="absolute top-0 w-full h-screen flex items-center justify-center"
       >
-        <div className="text-center text-black">
+        <div className="text-center text-black bg-background">
           <a href={link} target="_blank" rel="noopener noreferrer">
             <button className="peer absolute bottom-10 left-8 p-5 rounded-full bg-black text-white text-[9rem]">
               <ArrowTopRightIcon className="transition-transform duration-300 peer-hover:rotate-[-90deg]" />
@@ -155,7 +156,8 @@ const ProjectsShowcase: React.FC = () => {
 
   return (
     <div ref={containerRef} className="relative w-full h-[500vh] bg-white">
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-black">
+      <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-black bg-background">
+        <LinearGradient />
         {projects.map((project, index) => (
           <Project
             key={index + project.link} // Ensure a unique key

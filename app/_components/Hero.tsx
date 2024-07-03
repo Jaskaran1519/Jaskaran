@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import { animate, easeInOut, motion } from "framer-motion";
 import { MoveDown } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import Jiggle from "./Jiggle";
 
 const Hero = () => {
-  const [project, setProject] = useState(false);
-  const [resume, setResume] = useState(false);
-
   return (
     <div className="w-[90%] mx-auto h-auto overflow-hidden ">
       <div className=" mt-28  ">
-        <div className="lg:text-[6rem] xl:text-[8rem] text-[4rem] text-[#323031] font-extrabold flex flex-wrap  leading-tight overflow-hidden mb-5">
-          {"Creative Web Developer".split("").map((item, index) => (
+        {/* <div className="lg:text-[6rem] xl:text-[8rem] text-[4rem] text-[#323031] font-extrabold flex flex-wrap  leading-tight overflow-hidden mb-5">
+          {`Creative Web Developer`.split("").map((item, index) => (
             <motion.span
               initial={{ y: 200 }}
               animate={{ y: 0 }}
@@ -44,7 +40,7 @@ const Hero = () => {
               className="w-full md:w-[40vw] h-[25vh]  z-0 m-0"
             />
           </motion.div>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-wrap h-auto">
         <div className="w-[30%] h-auto flex justify-center mt-10">
