@@ -41,14 +41,14 @@ const Hero = () => {
               animate={{ rotate: 30, transition: { duration: 1, delay: 2.5 } }}
               className="absolute left-1/2 top-0 -translate-x-1/2 -z-20 w-auto h-[20vh]"
             >
-              <Image src="/123.jpg" width={150} height={150} alt="/" />
+              <Image src="/123-min.webp" width={150} height={150} alt="/" />
             </motion.div>
             <motion.div
               initial={{ rotate: 0 }}
               animate={{ rotate: -30, transition: { duration: 1, delay: 2.5 } }}
               className="absolute left-1/2 top-0 -translate-x-1/2 -z-10 w-auto h-[20vh]"
             >
-              <Image src="/456.jpg" width={150} height={150} alt="/" />
+              <Image src="/456-min.webp" width={150} height={100} alt="/" />
             </motion.div>
           </motion.div>
         </div>
