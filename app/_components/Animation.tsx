@@ -30,7 +30,7 @@ const Animation = () => {
   const y3: any = useTransform(scrollYProgress, [0, 1], [0, height * 1]);
   const y4: any = useTransform(scrollYProgress, [0, 1], [0, height * 4]);
   return (
-    <div className="mt-28">
+    <div className="">
       <div
         ref={container}
         className="h-[175vh] overflow-hidden bg-black flex flex-row gap-[1vw] p-[2vw] relative  "

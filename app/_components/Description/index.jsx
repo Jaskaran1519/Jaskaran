@@ -25,7 +25,7 @@ export default function index() {
   return (
     <div
       ref={description}
-      className="w-full md:w-[70%] mx-auto h-auto mt-[20vh] overflow-hidden "
+      className="w-full  lg:w-[70%] mx-auto h-auto mt-[20vh] overflow-hidden "
     >
       <div className="flex justify-between flex-wrap ">
         <p className="w-[80%] mx-auto md:w-[50%] h-auto text-[1.5rem] sm:text-[2rem] gap-2 items-center md:mt-20">
@@ -51,12 +51,12 @@ export default function index() {
         <div
           data-scroll
           data-scroll-speed="0.6"
-          className="w-full md:w-[40%] h-auto mx-auto"
+          className="w-full md:w-[50%] h-auto mx-auto"
         >
           <Orbit />
         </div>
       </div>
-      <div className="flex justify-center items-center flex-wrap gap-16 pb-10">
+      <div className="flex justify-center items-center flex-wrap gap-16 pb-10 mt-10">
         <Link href="/project">
           <Rounded className="text-[1.5rem] relative  border-[#323031] border-[2px] rounded-full font-semibold py-2 px-8 flex justify-center items-center">
             <p className="z-10 relative">Projects</p>

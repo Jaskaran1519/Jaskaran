@@ -9,6 +9,7 @@ import Footer from "./_components/Footer";
 import Preloader from "./_components/Preloader";
 import Description from "./_components/Description";
 import Projects from "./_components/Projects";
+
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -20,24 +21,35 @@ const page = () => {
       requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    const rafId = requestAnimationFrame(raf);
 
     setTimeout(() => {
       setIsLoading(false);
       document.body.style.cursor = "default";
       window.scrollTo(0, 0);
     }, 2000);
-  });
+
+    return () => {
+      cancelAnimationFrame(rafId);
+    };
+  }, []); // Add an empty dependency array to avoid running the effect on every render
 
   return (
-    <div className="  w-full min-h-screen bg-gray-300 ">
+    <div className="w-full min-h-screen">
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Hero />
-      <Description />
+      <div
+        className="bg-[url('/bghero.jpg')]"
+        style={{ filter: "brightness(100%)" }}
+      >
+        <Hero />
+        <Description />
+      </div>
       <Skills />
-      <Projects />
+      <div className="bg-[#f1faee]">
+        <Projects />
+      </div>
       <Animation />
       <Footer />
     </div>
