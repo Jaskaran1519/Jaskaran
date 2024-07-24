@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <div className=" h-[100vh] bg-[#19191c] w-full">
+    <div className=" min-h-screen bg-[#19191c] w-full">
       <div className="w-[80%] mx-auto md:w-[70%]">
         <div className="text-white font-semibold  pt-[12vh] leading-tight text-[4rem] md:text-[6rem]">
           <div className="flex gap-5">

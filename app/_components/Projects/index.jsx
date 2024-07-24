@@ -22,10 +22,10 @@ const projects = [
     link: "https://felina1519.vercel.app",
   },
   {
-    title: "Locomotive",
-    src: "owl.png",
+    title: "Quizesty",
+    src: "quizesty.webp",
     color: "#EFE8D3",
-    link: "https://www.apple.com",
+    link: "https://quizesty.vercel.app",
   },
   {
     title: "Eazweb",
