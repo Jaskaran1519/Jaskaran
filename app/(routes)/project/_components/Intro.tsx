@@ -56,7 +56,6 @@ const page = () => {
 
   return (
     <div>
-      {/* <div className="h-[50vh] bg-black m-0"></div> */}
       <div ref={container} className="h-[300vh] relative w-full mt-0 pt-0 ">
         <div className="sticky top-0 h-[100vh] bg-black overflow-hidden">
           {picture.map(({ src, scale }, index) => {

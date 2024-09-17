@@ -154,11 +154,11 @@ const ProjectsShowcase: React.FC = () => {
         <LinearGradient />
         {projects.map((project, index) => (
           <Project
-            key={index + project.link} // Ensure a unique key
+            key={`${project.title}-${index}`} // Ensure a unique key
             index={index + 1}
             totalProjects={projects.length}
             scrollYProgress={scrollYProgress}
-            {...project}
+            {...project} // Spread the project properties
           />
         ))}
       </div>

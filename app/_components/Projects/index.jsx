@@ -16,10 +16,10 @@ const projects = [
     link: "https://sharelit.vercel.app",
   },
   {
-    title: "Felina",
-    src: "felina.webp",
+    title: "Lift Lock",
+    src: "liftlock.png",
     color: "#8C8C8C",
-    link: "https://felina1519.vercel.app",
+    link: "https://liftlock.in",
   },
   {
     title: "Quizesty",
@@ -31,7 +31,7 @@ const projects = [
     title: "Eazweb",
     src: "eazweb.png",
     color: "#706D63",
-    link: "https://eazweb2.vercel.app/",
+    link: "https://eazweb.in/",
   },
 ];
 
