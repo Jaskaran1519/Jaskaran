@@ -39,17 +39,13 @@ const Project: React.FC<ProjectProps> = ({
   const center = (index - 0.5) / totalProjects;
   const end = index / totalProjects;
 
-  const textOpacity = useTransform(
+  const opacity = useTransform(
     scrollYProgress,
     [start, start + 0.05, end - 0.05, end],
     [0, 1, 1, 0]
   );
 
-  const imageY = useTransform(
-    scrollYProgress,
-    [start, end],
-    ["100vh", "-100vh"]
-  );
+  const y = useTransform(scrollYProgress, [start, end], ["100vh", "-100vh"]);
 
   const imageScale = useTransform(
     scrollYProgress,
@@ -57,48 +53,58 @@ const Project: React.FC<ProjectProps> = ({
     [0.5, 1, 0.5]
   );
 
+  const textY = useTransform(scrollYProgress, [start, end], ["50vh", "-50vh"]);
+
   return (
-    <>
-      <motion.div
-        style={{ opacity: textOpacity }}
-        className="absolute top-0 w-full h-screen flex items-center justify-center"
-      >
-        <div className="text-center text-black bg-background">
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="peer absolute bottom-10 left-8 p-5 rounded-full bg-black text-white text-[9rem]">
-              <ArrowTopRightIcon className="transition-transform duration-300 peer-hover:rotate-[-90deg]" />
-            </button>
-          </a>
+    <motion.div
+      style={{ opacity, y }}
+      className="absolute top-0 left-0 w-full h-screen flex items-center justify-center"
+    >
+      <div className="relative w-full h-full">
+        <motion.div
+          style={{ scale: imageScale }}
+          className="absolute inset-0 flex items-center justify-center z-10"
+        >
+          <Image
+            src={img}
+            width={800}
+            height={800}
+            className="opacity-80"
+            alt={title}
+          />
+        </motion.div>
+        <motion.div
+          style={{ y: textY }}
+          className="absolute inset-0 flex flex-col items-center justify-center text-center text-black z-20"
+        >
           <h2
-            className={`${pacifico.className} text-[5.5rem] md:text-[12rem] lg:text-[18rem] xl:text-[22rem] mb-4`}
+            className={`${pacifico.className} text-[4rem] sm:text-[5rem] md:text-[8rem] lg:text-[12rem] xl:text-[16rem] mb-4`}
           >
             {title}
           </h2>
           <p
-            className={`${comfortaa.className} absolute bottom-10 right-10 text-[1.5rem] md:text-[2rem] text-right leading-tight`}
+            className={`${comfortaa.className} text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[1.75rem] leading-relaxed md:flex px-4`}
           >
             {description.map((item, index) => (
-              <React.Fragment key={index}>{item}</React.Fragment>
+              <div key={index} className="mx-2 flex">
+                {item}
+                {index < description.length - 1 ? (
+                  <div className="mx-2">|</div>
+                ) : null}
+              </div>
             ))}
           </p>
-        </div>
-      </motion.div>
-      <motion.div
-        style={{
-          y: imageY,
-          scale: imageScale,
-        }}
-        className="absolute top-0 left-0 w-full h-screen flex items-center justify-center overflow-hidden"
-      >
-        <Image
-          src={img}
-          width={800}
-          height={800}
-          className="opacity-80"
-          alt={title}
-        />
-      </motion.div>
-    </>
+        </motion.div>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-10 right-10 bg-black text-white p-4 rounded-full hover:bg-gray-800 transition-colors duration-300 z-50"
+        >
+          <ArrowTopRightIcon className="w-8 h-8" />
+        </a>
+      </div>
+    </motion.div>
   );
 };
 
@@ -112,53 +118,41 @@ const ProjectsShowcase: React.FC = () => {
   const projects = [
     {
       title: "Sharelit",
-      description: [
-        "Next js",
-        <br key="1" />,
-        "Firebase",
-        <br key="2" />,
-        "Clerk",
-      ],
+      description: ["Next js", "Firebase", "sharelit.vercel.app"],
       img: "/projects/sharelit.webp",
       link: "https://sharelit.vercel.app/",
     },
     {
       title: "Quizesty",
-      description: [
-        "Next js",
-        <br key="1" />,
-        "Octo AI",
-        <br key="2" />,
-        "Google Gemini",
-      ],
+      description: ["Next js", "Octo AI", "quizesty.vercel.app"],
       img: "/projects/quizesty.webp",
       link: "https://quizesty.vercel.app/",
     },
     {
       title: "Eazweb",
-      description: ["Next js", <br key="1" />, "Framer Motion"],
+      description: ["Next js", "Framer Motion", "eazweb.in"],
       img: "/projects/eazweb.png",
       link: "https://eazweb.in/",
     },
     {
-      title: "Felina",
-      description: ["Next js ", <br key="1" />, "Firebase"],
-      img: "/projects/felina.webp",
-      link: "https://felina1519.vercel.app/",
+      title: "Lift Lock",
+      description: ["Next js", "MongoDB", "Cloudinary"],
+      img: "/projects/liftlock.png",
+      link: "https://liftlock.in/",
     },
   ];
 
   return (
-    <div ref={containerRef} className="relative w-full h-[500vh] bg-white">
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-black bg-background">
+    <div ref={containerRef} className="relative w-full h-[500vh]">
+      <div className="sticky top-0 h-screen overflow-hidden">
         <LinearGradient />
         {projects.map((project, index) => (
           <Project
-            key={`${project.title}-${index}`} // Ensure a unique key
+            key={`${project.title}-${index}`}
             index={index + 1}
             totalProjects={projects.length}
             scrollYProgress={scrollYProgress}
-            {...project} // Spread the project properties
+            {...project}
           />
         ))}
       </div>
