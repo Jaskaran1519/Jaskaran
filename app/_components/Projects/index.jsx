@@ -22,10 +22,10 @@ const projects = [
     link: "https://liftlock.in",
   },
   {
-    title: "Quizesty",
-    src: "quizesty.webp",
+    title: "Googuessy",
+    src: "googuessy.png",
     color: "#EFE8D3",
-    link: "https://quizesty.vercel.app",
+    link: "https://googuessy.pages.dev/",
   },
   {
     title: "Eazweb",

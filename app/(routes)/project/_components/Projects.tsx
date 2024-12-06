@@ -123,10 +123,10 @@ const ProjectsShowcase: React.FC = () => {
       link: "https://sharelit.vercel.app/",
     },
     {
-      title: "Quizesty",
-      description: ["Next js", "Octo AI", "quizesty.vercel.app"],
-      img: "/projects/quizesty.webp",
-      link: "https://quizesty.vercel.app/",
+      title: "Googuessy",
+      description: ["MERN", "Gemini AI", "googuessy.pages.dev/"],
+      img: "/projects/googuessy.png",
+      link: "https://googuessy.pages.dev/",
     },
     {
       title: "Eazweb",

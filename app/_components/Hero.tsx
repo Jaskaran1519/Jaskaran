@@ -13,25 +13,25 @@ const Hero = () => {
       <div className="mt-[35vh] md:mt-[30vh] xl:mt-[40vh] w-full relative mx-auto">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-[80%] md:w-[70%]">
           <motion.div
-            className={`${headings.className} relative text-[3.2rem] sm:text-[4.5rem] md:text-[7rem] lg:text-[9rem] leading-none   `}
+            className={`${headings.className} relative text-[3.2rem] sm:text-[4.5rem] md:text-[7rem] lg:text-[9rem] leading-none`}
           >
             <motion.h1
-              initial={{ x: "100%", opacity: 0 }}
+              initial={{ y: 100, opacity: 0 }}
               animate={{
-                x: 0,
+                y: 0,
                 opacity: 1,
-                transition: { duration: 1, delay: 2.5 },
+                transition: { duration: 0.5, delay: 2.5 },
               }}
             >
               Web
             </motion.h1>
             <motion.h1
               className="pl-[10vw] -pt-4 overflow-hidden"
-              initial={{ x: "-100%", opacity: 0 }}
+              initial={{ y: 100, opacity: 0 }}
               animate={{
-                x: 0,
+                y: 0,
                 opacity: 1,
-                transition: { duration: 1, delay: 2.5 },
+                transition: { duration: 0.5, delay: 2.7 },
               }}
             >
               Developer
