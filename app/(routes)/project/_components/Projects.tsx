@@ -117,10 +117,34 @@ const ProjectsShowcase: React.FC = () => {
 
   const projects = [
     {
+      title: "AR TryOns",
+      description: ["Next js", "Google Mediapipe", "Three JS"],
+      img: "/projects/eazweb2.png",
+      link: "https://www.eazweb.com/artryons/",
+    },
+    {
       title: "Sharelit",
-      description: ["Next js", "Firebase", "sharelit.vercel.app"],
+      description: ["Next js", "Firebase", "shareing"],
       img: "/projects/sharelit.webp",
       link: "https://sharelit.vercel.app/",
+    },
+    {
+      title: "Sleek Studio",
+      description: ["Next js", "Mongo DB", "E-Commerce"],
+      img: "/projects/sleekstudio.png",
+      link: "https://www.thesleekstudio.com",
+    },
+    {
+      title: "Eazweb",
+      description: ["Next js", "Framer Motion", "portfolio"],
+      img: "/projects/eazweb2.png",
+      link: "https://eazweb.com/",
+    },
+    {
+      title: "Luxury Machines",
+      description: ["Next js", "MongoDB", "Cloudinary"],
+      img: "/projects/luxurymachines.png",
+      link: "https://luxurymachines.in/",
     },
     {
       title: "Googuessy",
@@ -128,18 +152,7 @@ const ProjectsShowcase: React.FC = () => {
       img: "/projects/googuessy.png",
       link: "https://googuessy.pages.dev/",
     },
-    {
-      title: "Eazweb",
-      description: ["Next js", "Framer Motion", "eazweb.in"],
-      img: "/projects/eazweb.png",
-      link: "https://eazweb.in/",
-    },
-    {
-      title: "Lift Lock",
-      description: ["Next js", "MongoDB", "Cloudinary"],
-      img: "/projects/liftlock.png",
-      link: "https://liftlock.in/",
-    },
+   
   ];
 
   return (

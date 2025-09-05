@@ -10,28 +10,28 @@ import { useRouter } from "next/navigation";
 
 const projects = [
   {
+    title: "Eazweb",
+    src: "eazweb2.png",
+    color: "#daf0ee",
+    link: "https://www.eazweb.com",
+  },
+  {
+    title: "Sleek Studio",
+    src: "sleekstudio.png",
+    color: "#8C8C8C",
+    link: "https://thesleekstudio.com",
+  },
+  {
+    title: "AR Tryons",
+    src: "eazweb.png",
+    color: "#EFE8D3",
+    link: "https://www.eazweb.com/artryons/",
+  },
+  {
     title: "Sharelit",
     src: "sharelit.webp",
-    color: "#daf0ee",
-    link: "https://sharelit.vercel.app",
-  },
-  {
-    title: "Lift Lock",
-    src: "liftlock.png",
-    color: "#8C8C8C",
-    link: "https://liftlock.in",
-  },
-  {
-    title: "Googuessy",
-    src: "googuessy.png",
-    color: "#EFE8D3",
-    link: "https://googuessy.pages.dev/",
-  },
-  {
-    title: "Eazweb",
-    src: "eazweb.png",
     color: "#706D63",
-    link: "https://eazweb.in/",
+    link: "https://sharelit.vercel.app/",
   },
 ];
 
