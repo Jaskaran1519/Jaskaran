@@ -119,8 +119,8 @@ const ProjectsShowcase: React.FC = () => {
     {
       title: "AR TryOns",
       description: ["Next js", "Google Mediapipe", "Three JS"],
-      img: "/projects/eazweb2.png",
-      link: "https://www.eazweb.com/artryons/",
+      img: "/projects/tryons.png",
+      link: "https://tryons.eazweb.com/",
     },
     {
       title: "Sharelit",

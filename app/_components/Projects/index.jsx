@@ -23,9 +23,9 @@ const projects = [
   },
   {
     title: "AR Tryons",
-    src: "eazweb.png",
+    src: "tryons.png",
     color: "#EFE8D3",
-    link: "https://www.eazweb.com/artryons/",
+    link: "https://tryons.eazweb.com/",
   },
   {
     title: "Sharelit",
