@@ -12,8 +12,8 @@ export default function index() {
   const isInView = useInView(description);
   const handleDownload = () => {
     // Code to trigger download
-    const fileUrl = "/download/resume1519-2026.pdf"; // Replace with the actual URL of your file
-    const fileName = "resume1519-2026.pdf"; // Replace with the desired file name
+    const fileUrl = "/download/jaskaran_resume_final.pdf"; // Replace with the actual URL of your file
+    const fileName = "jaskaran_resume_final.pdf"; // Replace with the desired file name
 
     const link = document.createElement("a");
     link.href = fileUrl;

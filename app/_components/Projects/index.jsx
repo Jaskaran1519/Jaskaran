@@ -16,17 +16,24 @@ const projects = [
     link: "https://www.eazweb.com",
   },
   {
-    title: "Sleek Studio",
-    src: "sleekstudio.png",
-    color: "#8C8C8C",
-    link: "https://thesleekstudio.com",
-  },
-  {
     title: "AR Tryons",
     src: "tryons.png",
     color: "#EFE8D3",
     link: "https://tryons.eazweb.com/",
   },
+  {
+    title: "Googuessy",
+    src: "googuessy.png",
+    color: "#C2E2CC",
+    link: "https://googuessy.pages.dev/",
+  },
+  {
+    title: "Sleek Studio",
+    src: "sleekstudio.png",
+    color: "#8C8C8C",
+    link: "https://thesleekstudio.com",
+  },
+
   {
     title: "Sharelit",
     src: "sharelit.webp",

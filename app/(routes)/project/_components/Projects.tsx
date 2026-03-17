@@ -123,10 +123,10 @@ const ProjectsShowcase: React.FC = () => {
       link: "https://tryons.eazweb.com/",
     },
     {
-      title: "Sharelit",
-      description: ["Next js", "Firebase", "shareing"],
-      img: "/projects/sharelit.webp",
-      link: "https://sharelit.vercel.app/",
+      title: "Googuessy",
+      description: ["MERN", "Gemini AI", "googuessy.pages.dev/"],
+      img: "/projects/googuessy.png",
+      link: "https://googuessy.pages.dev/",
     },
     {
       title: "Sleek Studio",
@@ -147,10 +147,10 @@ const ProjectsShowcase: React.FC = () => {
       link: "https://luxurymachines.in/",
     },
     {
-      title: "Googuessy",
-      description: ["MERN", "Gemini AI", "googuessy.pages.dev/"],
-      img: "/projects/googuessy.png",
-      link: "https://googuessy.pages.dev/",
+      title: "Sharelit",
+      description: ["Next js", "Firebase", "shareing"],
+      img: "/projects/sharelit.webp",
+      link: "https://sharelit.vercel.app/",
     },
    
   ];
