@@ -9,20 +9,20 @@ import Footer from "./Footer";
 
 const navItems = [
   {
-    title: "Home",
-    href: "/",
-  },
-  {
     title: "Work",
-    href: "/project",
+    href: "#work",
   },
   {
     title: "About",
-    href: "/",
+    href: "#about",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
   },
 ];
 
-export default function index() {
+export default function index({ setIsActive }) {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
@@ -52,6 +52,7 @@ export default function index() {
                 data={{ ...data, index }}
                 isActive={selectedIndicator == data.href}
                 setSelectedIndicator={setSelectedIndicator}
+                setIsActive={setIsActive}
               ></Link>
             );
           })}

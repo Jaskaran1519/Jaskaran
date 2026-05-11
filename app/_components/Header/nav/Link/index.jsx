@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { slide, scale } from "../../animation";
 
-export default function Index({ data, isActive, setSelectedIndicator }) {
+export default function Index({ data, isActive, setSelectedIndicator, setIsActive }) {
   const { title, href, index } = data;
 
   return (
@@ -23,7 +23,17 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         animate={isActive ? "open" : "closed"}
         className={styles.indicator}
       ></motion.div>
-      <Link href={href}>{title}</Link>
+      <a 
+        href={href}
+        onClick={(e) => {
+          e.preventDefault();
+          if (setIsActive) setIsActive(false);
+          // @ts-ignore
+          window.lenis ? window.lenis.scrollTo(href) : document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        {title}
+      </a>
     </motion.div>
   );
 }

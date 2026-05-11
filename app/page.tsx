@@ -8,6 +8,7 @@ import Skills from "./_components/Skills";
 import Footer from "./_components/Footer";
 import Preloader from "./_components/Preloader";
 import Description from "./_components/Description";
+import ExperienceTimeline from "./_components/ExperienceTimeline";
 import Projects from "./_components/Projects";
 
 const page = () => {
@@ -15,6 +16,8 @@ const page = () => {
 
   useEffect(() => {
     const lenis = new Lenis();
+    // @ts-ignore
+    window.lenis = lenis;
 
     function raf(time: any) {
       lenis.raf(time);
@@ -39,19 +42,23 @@ const page = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <div
-        className="bg-[url('/bghero.jpg')]"
-        style={{ filter: "brightness(100%)" }}
-      >
+      <div className="bg-[#0e0e0e] text-[#EFEFEF]">
         <Hero />
-        <Description />
+        <div id="about">
+          <Description />
+        </div>
+      </div>
+      <div id="work">
+        <ExperienceTimeline />
       </div>
       <Skills />
       <div className="bg-[#f1faee]">
         <Projects />
       </div>
       <Animation />
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 };

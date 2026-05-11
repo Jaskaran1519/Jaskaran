@@ -58,18 +58,18 @@ export default function index() {
       </div>
       <div className="flex justify-center items-center flex-wrap gap-16 pb-10 mt-10">
         <Link href="/project">
-          <Rounded className="text-[1.5rem] relative  border-[#323031] border-[2px] rounded-full font-semibold py-2 px-8 flex justify-center items-center">
+          <Rounded className="text-[1.5rem] relative border-[#EFEFEF] border-[1px] rounded-full font-semibold py-2 px-8 flex justify-center items-center">
             <p className="z-10 relative">Projects</p>
           </Rounded>
         </Link>
         <Rounded
           onClick={handleDownload}
-          className="text-[1.5rem] relative  border-[#323031] border-[2px] rounded-full font-semibold py-2 px-8 flex justify-center items-center"
+          className="text-[1.5rem] relative border-[#EFEFEF] border-[1px] rounded-full font-semibold py-2 px-8 flex justify-center items-center cursor-pointer"
         >
           <p className="z-10 relative">Resume</p>
         </Rounded>
       </div>
-      <hr className="w-[80%] mx-auto mt-28 bg-slate-900 " />
+      <hr className="w-[80%] mx-auto mt-28 border-[#333] border-t" />
     </div>
   );
 }

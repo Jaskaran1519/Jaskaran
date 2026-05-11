@@ -89,7 +89,7 @@ export default function index() {
           ></div>
         </Rounded>
       </div>
-      <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+      <AnimatePresence mode="wait">{isActive && <Nav setIsActive={setIsActive} />}</AnimatePresence>
     </>
   );
 }
