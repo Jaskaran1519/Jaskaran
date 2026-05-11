@@ -68,7 +68,7 @@ const Hero = () => {
           </motion.div>
         </div>
         <div className="w-full md:w-[25%] h-auto text-[1.5rem] text-black font-semibold flex justify-center items-end   mt-10">
-          <p>Fullstack Nextjs Developer with freelance experience</p>
+          <p>Fullstack Nextjs Developer with startup experience</p>
         </div>
         <motion.div
           initial={{ x: 500 }}

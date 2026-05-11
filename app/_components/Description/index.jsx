@@ -7,7 +7,7 @@ import Orbit from "../ui/Orbit";
 import Link from "next/link";
 export default function index() {
   const phrase =
-    "Self taught and motivated Web developer.  Have experience as a freelancer.  Have hands-on experience on modern technologies";
+    "Self taught and motivated Web developer. Experienced in building scalable applications in startup environments. Have hands-on experience on modern technologies";
   const description = useRef(null);
   const isInView = useInView(description);
   const handleDownload = () => {
