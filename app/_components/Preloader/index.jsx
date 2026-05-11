@@ -67,7 +67,7 @@ export default function Index() {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="w-full h-full flex justify-center items-center fixed z-10 bg-[#141516]"
+      className="w-full h-full flex justify-center items-center fixed z-10 bg-[#0e0e0e]"
     >
       {dimension.width > 0 && (
         <>
@@ -76,6 +76,7 @@ export default function Index() {
               variants={curve}
               initial="initial"
               exit="exit"
+              fill="#0e0e0e"
             ></motion.path>
           </svg>
           <motion.p
