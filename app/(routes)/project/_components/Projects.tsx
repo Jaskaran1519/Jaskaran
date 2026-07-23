@@ -120,7 +120,7 @@ const ProjectsShowcase: React.FC = () => {
       title: "AR TryOns",
       description: ["Next js", "Google Mediapipe", "Three JS"],
       img: "/projects/tryons.png",
-      link: "https://tryons.eazweb.com/",
+      link: "https://tryons.eazweb.in/",
     },
     {
       title: "Googuessy",
@@ -138,7 +138,7 @@ const ProjectsShowcase: React.FC = () => {
       title: "Eazweb",
       description: ["Next js", "Framer Motion", "portfolio"],
       img: "/projects/eazweb2.png",
-      link: "https://eazweb.com/",
+      link: "https://eazweb.in/",
     },
     {
       title: "Luxury Machines",

@@ -13,13 +13,13 @@ const projects = [
     title: "Eazweb",
     src: "eazweb2.png",
     color: "#daf0ee",
-    link: "https://www.eazweb.com",
+    link: "https://www.eazweb.in",
   },
   {
     title: "AR Tryons",
     src: "tryons.png",
     color: "#EFE8D3",
-    link: "https://tryons.eazweb.com/",
+    link: "https://tryons.eazweb.in/",
   },
   {
     title: "Googuessy",

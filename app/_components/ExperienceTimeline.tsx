@@ -15,9 +15,9 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    company: "Eazweb.com",
+    company: "Eazweb.in",
     role: "Fullstack Web Developer",
-    period: "Oct 2023 - May 2026",
+    period: "Oct 2023 - July 2026",
     isMain: true,
     description: [
       "Led development of high-performance web applications using Next.js and modern technologies.",
@@ -28,7 +28,7 @@ const experiences: Experience[] = [
   {
     company: "Siddh.ai",
     role: "Contract Software Engineer",
-    period: "Jun 2025 - Sep 2025",
+    period: "Jun 2025 - Oct 2025",
     description: [
       "Designed and managed data pipelines to process millions of rows of scraped legal data.",
       "Implemented post-processing logic to extract meaningful insights from Indian Supreme Court and High Court records.",
